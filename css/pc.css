@@ -327,15 +327,76 @@
     padding-top: 65px;
 }
 
+/********************************갤러리*******************************/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,300,400,500,600,700,800');
+/* *, *:before, *:after {
+   box-sizing: border-box !important;
+} */
 
+.profilebox {
+   width: 300px;
+   height: 350px;
+   background: #eee;
+   cursor: pointer;
+   float: left;
+   /* margin: 30px; */
+   margin: 9px;
+}
+.profilebox1 {
+   /* background-image: url("../images/event_01.jpg"); */
+   background-position: center center;
+   background-size: cover;
+   perspective: 450px;
+   position: relative;
+}
+.profilebox1:nth-child(1){
+  background-image: url("../images/event_01.jpg");
+}
+.profilebox1:nth-child(2){
+  background-image: url("../images/event_02.jpg");
+}
+.profilebox1:nth-child(3){
+  background-image: url("../images/event_03.jpg");
+}
+.profilebox1:nth-child(4){
+  background-image: url("../images/event_04.jpg");
+}
+.profilebox1:nth-child(5){
+  background-image: url("../images/event_05.jpg");
+}
+.profilebox1:nth-child(6){
+  background-image: url("../images/event_06.jpg");
+}
+.profilebox1:nth-child(7){
+  background-image: url("../images/event_07.png");
+}
+.profilebox1:nth-child(8){
+  background-image: url("../images/event_08.png");
+}
 
-
-
-
-
-
-
-
-
-
-
+.profilebox .profileInfo {
+   background: #354739 none repeat scroll 0 0;
+   bottom: 0;
+   height: 50px;
+   left: 0;
+   margin: 0 auto;
+   position: absolute;
+   right: 0;
+   width: 90%;
+   transform: rotatex(90deg);
+   transform-origin: bottom center 0;
+   transition: all 350ms ease;
+   opacity: 0;
+   color:#ffff
+}
+.profilebox .profileInfo h3 {
+   font-size: 20px;
+   margin: 5px 0;
+   text-align: center;
+}
+.profilebox:hover .profileInfo {
+   opacity: 1;
+   bottom: 15px;
+   transform: rotatex(0deg);
+}
