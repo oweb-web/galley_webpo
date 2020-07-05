@@ -277,7 +277,8 @@
    cursor: pointer;
    float: left;
    /* margin: 30px; */
-   margin: 7px;
+   margin: 3
+px;
 }
 .profilebox1 {
    /* background-image: url("../images/event_01.jpg"); */
@@ -336,4 +337,9 @@
    opacity: 1;
    bottom: 15px;
    transform: rotatex(0deg);
+}
+
+#section3 .gall {
+
+    padding: 0 0 0 55px;
 }
